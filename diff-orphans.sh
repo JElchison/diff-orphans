@@ -4,7 +4,7 @@
 #
 # Bash script to efficiently identify orphaned files in large trees.  Useful for sanity-checking after copying large trees.  This script should be capable of running in OS X or in Linux.
 #
-# Version 1.0.3
+# Version 1.0.4
 #
 # Copyright (C) 2015 Jonathan Elchison <JElchison@gmail.com>
 #
