@@ -44,13 +44,11 @@ print_usage() {
 
 echo "[+] Testing dependencies..." >&2
 if [[ ! -x $(which readlink) ]] ||
-   [[ ! -x $(which basename) ]] ||
    [[ ! -x $(which find) ]] ||
    [[ ! -x $(which sort) ]] ||
    [[ ! -x $(which sed) ]] ||
-   [[ ! -x $(which diff) ]] ||
-   [[ ! -x $(which rm) ]]; then
-    echo "[-] Dependencies unmet.  Please verify that the following are installed, executable, and in the PATH:  readlink, basename, find, sort, sed, diff, rm" >&2
+   [[ ! -x $(which diff) ]]; then
+    echo "[-] Dependencies unmet.  Please verify that the following are installed, executable, and in the PATH:  readlink, find, sort, sed, diff" >&2
     exit 1
 fi
 
